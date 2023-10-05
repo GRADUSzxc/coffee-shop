@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding-inline: 20px;
+}
+
+.main {
+  background: url(../img/main-bg.jpg) no-repeat center/cover;
+  height: 640px;
+}
+.main header {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.main header .menu {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+}
+.main header .menu a {
+  color: #FFF;
+  font-family: Merienda;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+}
+.main .main-text {
+  text-align: center;
+  padding-top: 110px;
+}
+.main .main-text h1 {
+  padding-bottom: 20px;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Merienda;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}
+.main .main-text span {
+  padding-bottom: 35px;
+}
+.main .main-text h3 {
+  padding-bottom: 20px;
+  color: #FFF;
+  font-family: Merienda;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+.main .main-text h4 {
+  padding-bottom: 18px;
+  color: #FFF;
+  font-family: Merienda;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+.main .main-text button {
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #FFF;
+  background: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #FFF;
+  font-family: Merienda;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.about {
+  padding-block: 80px 100px;
+  text-align: center;
+}
+.about .about-box {
+  margin: 0 auto;
+  width: 600px;
+}
+.about .about-box h1 {
+  padding-bottom: 20px;
+  color: #000;
+  font-family: Merienda;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.about .about-box img {
+  padding-bottom: 40px;
+}
+.about .about-box p {
+  color: #000;
+  text-align: center;
+  font-family: Merienda;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.about .about-box .p-top {
+  padding-bottom: 20px;
+}
+
+.best {
+  height: 495px;
+  background: url(../img/best-bg.jpg) no-repeat center/cover;
+  text-align: center;
+}
+.best h2 {
+  padding-block: 80px 40px;
+  color: #000;
+  text-align: center;
+  font-family: Merienda;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.best .best-grid {
+  margin: 0 auto;
+  width: 810px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+}
+.best .best-grid .best-item {
+  width: 220px;
+  height: 240px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.65);
+}
+.best .best-grid .best-item img {
+  padding-top: 22px;
+}
+.best .best-grid .best-item h3 {
+  padding-block: 10px;
+  color: #000;
+  text-align: center;
+  font-family: Merienda;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.best .best-grid .best-item p {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  color: #000;
+  text-align: center;
+  font-family: Merienda;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.footer {
+  padding: 30px 20px;
+  text-align: center;
+}
+.footer .footer-menu {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+.footer .footer-menu a {
+  color: #000;
+  font-family: Merienda;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+}
+
+@media (max-width: 1199.98px) {
+  .wrap {
+    width: 950px;
+  }
+}
+@media (max-width: 991.98px) {
+  .wrap {
+    width: 720px;
+  }
+  .best-grid {
+    width: 500px;
+    gap: 30px;
+  }
+  .best-grid .best-item:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .wrap {
+    width: 540px;
+  }
+  .best-grid {
+    width: 465px;
+  }
+  .about-box {
+    width: 400px;
+  }
+}
+@media (max-width: 575.98px) {
+  .wrap {
+    width: 100%;
+  }
+  .about-box {
+    width: 100%;
+  }
+  .best-grid .best-item:nth-child(2) {
+    display: none;
+  }
+}

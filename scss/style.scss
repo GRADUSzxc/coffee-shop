@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+    padding-inline: 20px;
+}
+
+.main {
+    background: url(../img/main-bg.jpg) no-repeat center / cover;
+    height: 640px;
+
+    header {
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .menu {
+            display: flex;
+            align-items: flex-end;
+            gap: 40px;
+
+            a {
+                color: #FFF;
+                font-family: Merienda;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                text-decoration: 0;
+            }
+        }
+    }
+
+    .main-text {
+        text-align: center;
+        padding-top: 110px;
+
+        h1 {
+            padding-bottom: 20px;
+
+            color: #FFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-family: Merienda;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        span {
+            padding-bottom: 35px;
+        }
+
+        h3 {
+            padding-bottom: 20px;
+            color: #FFF;
+            font-family: Merienda;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        h4 {
+            padding-bottom: 18px;
+            color: #FFF;
+            font-family: Merienda;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        button {
+            width: 120px;
+            height: 30px;
+            cursor: pointer;
+            border-radius: 3px;
+            border: 1px solid #FFF;
+            background: 0;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+            color: #FFF;
+            font-family: Merienda;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+        }
+    }
+}
+
+.about {
+    padding-block: 80px 100px;
+    text-align: center;
+
+    .about-box {
+        margin: 0 auto;
+        width: 600px;
+
+        h1 {
+            padding-bottom: 20px;
+
+            color: #000;
+            font-family: Merienda;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        img {
+            padding-bottom: 40px;
+        }
+
+        p {
+            color: #000;
+            text-align: center;
+            font-family: Merienda;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        .p-top {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.best {
+    height: 495px;
+    background: url(../img/best-bg.jpg) no-repeat center / cover;
+    text-align: center;
+
+    h2 {
+        padding-block: 80px 40px;
+
+        color: #000;
+        text-align: center;
+        font-family: Merienda;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .best-grid {
+        margin: 0 auto;
+        width: 810px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 70px;
+
+        .best-item {
+            width: 220px;
+            height: 240px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.65);
+
+            img {
+                padding-top: 22px;
+            }
+
+            h3 {
+                padding-block: 10px;
+
+                color: #000;
+                text-align: center;
+                font-family: Merienda;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+            }
+
+            p {
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 20px;
+
+                color: #000;
+                text-align: center;
+                font-family: Merienda;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 30px 20px;
+    text-align: center;
+
+    .footer-menu {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 40px;
+        padding-bottom: 40px;
+
+        a {
+            color: #000;
+            font-family: Merienda;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            text-decoration: 0;
+        }
+    }
+}
+
+@import "media";
